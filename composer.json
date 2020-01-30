@@ -1,5 +1,5 @@
 {
-    "name": "deanblackborough/php-quill-renderer",
+    "name": "polumathes/php-quill-renderer",
     "description": "Render quill insert deltas to HTML, Markdown and GitHub flavoured Markdown",
     "autoload": {
         "psr-4" : {
@@ -25,11 +25,5 @@
     "suggest": {
         "php": "^7.2"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/deanblackborough/php-quill-renderer"
-        }
-    ],
     "license": "MIT"
 }
