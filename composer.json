@@ -1,5 +1,5 @@
 {
-    "name": "deanblackborough/php-quill-renderer",
+    "name": "polumathes/php-quill-renderer",
     "description": "Render quill insert deltas to HTML, Markdown and GitHub flavoured Markdown",
     "autoload": {
         "psr-4" : {
