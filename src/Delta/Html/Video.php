@@ -34,6 +34,6 @@ class Video extends Delta
      */
     public function render(): string
     {
-        return '<iframe class="ql-video" frameborder="0" allowfullscreen="true" src="' . $this->escape($this->insert) . '"></iframe>';
+        return '<div class="quill-element quill-element--iframe"><iframe class="ql-video" frameborder="0" allowfullscreen="true" src="' . $this->escape($this->insert) . '"></iframe></div>';
     }
 }
