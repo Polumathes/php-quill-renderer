@@ -24,6 +24,16 @@ interface ParserAttributeInterface
     public function attributeBold(array $quill);
 
     /**
+     * Blockquote Quill attribute, assign the relevant Delta class and set up
+     * the data
+     *
+     * @param array $quill
+     *
+     * @return void
+     */
+    public function attributeBlockquote(array $quill);
+
+    /**
      * Header Quill attribute, assign the relevant Delta class and set up
      * the data
      *

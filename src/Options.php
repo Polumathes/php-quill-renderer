@@ -32,6 +32,7 @@ class Options
     public const HTML_TAG_SUB_SCRIPT = 'sub';
     public const HTML_TAG_SUPER_SCRIPT = 'sup';
     public const HTML_TAG_UNDERLINE = 'u';
+    public const HTML_TAG_BLOCKQUOTE = 'blockquote';
 
     public const MARKDOWN_TOKEN_BOLD = '**';
     public const MARKDOWN_TOKEN_HEADER = '#';
@@ -54,4 +55,5 @@ class Options
     public const ATTRIBUTE_SCRIPT_SUPER = 'super';
     public const ATTRIBUTE_STRIKE = 'strike';
     public const ATTRIBUTE_UNDERLINE = 'underline';
+    public const ATTRIBUTE_BLOCKQUOTE = 'blockquote';
 }

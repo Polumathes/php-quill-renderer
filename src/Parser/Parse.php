@@ -53,6 +53,7 @@ abstract class Parse implements ParserInterface, ParserAttributeInterface
     protected $valid = false;
 
     protected $class_delta_bold;
+    protected $class_delta_blockquote;
     protected $class_delta_color;
     protected $class_delta_header;
     protected $class_delta_image;
@@ -291,6 +292,10 @@ abstract class Parse implements ParserInterface, ParserAttributeInterface
                                         $this->attributeUnderline($quill);
                                         break;
 
+                                    case Options::ATTRIBUTE_BLOCKQUOTE:
+                                        $this->attributeBlockquote($quill);
+                                        break;
+
                                     default:
                                         if (is_array($quill['insert'])) {
                                             $this->compoundInsert($quill);
@@ -390,6 +395,20 @@ abstract class Parse implements ParserInterface, ParserAttributeInterface
     {
         if ($quill['attributes'][OPTIONS::ATTRIBUTE_BOLD] === true) {
             $this->deltas[] = new $this->class_delta_bold($quill['insert'], $quill['attributes']);
+        }
+    }
+
+    /**
+     * Blockquote Quill attribute, assign the relevant Delta class and set up the data
+     *
+     * @param array $quill
+     *
+     * @return void
+     */
+    public function attributeBlockquote(array $quill)
+    {
+        if ($quill['attributes'][OPTIONS::ATTRIBUTE_BLOCKQUOTE] === true) {
+            $this->deltas[] = new $this->class_delta_blockquote($quill['insert'], $quill['attributes']);
         }
     }
 

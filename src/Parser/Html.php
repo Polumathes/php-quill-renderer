@@ -20,6 +20,7 @@ use DBlackborough\Quill\Delta\Html\SubScript;
 use DBlackborough\Quill\Delta\Html\SuperScript;
 use DBlackborough\Quill\Delta\Html\Underline;
 use DBlackborough\Quill\Delta\Html\Video;
+use DBlackborough\Quill\Delta\Html\Blockquote;
 use DBlackborough\Quill\Options;
 
 /**
