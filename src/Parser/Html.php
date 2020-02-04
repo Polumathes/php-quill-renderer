@@ -49,6 +49,7 @@ class Html extends Parse
         parent::__construct();
 
         $this->class_delta_bold = Bold::class;
+        $this->class_delta_blockquote = Blockquote::class;
         $this->class_delta_color = Color::class;
         $this->class_delta_header = Header::class;
         $this->class_delta_image = Image::class;
